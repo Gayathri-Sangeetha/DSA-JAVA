@@ -9,6 +9,7 @@ public class Subsetgeneration{
             System.out.println("yes");
             return;
         }
+
         System.out.println("No");}
         public static boolean subset(int[] arr,int index,int sum,int targetsum){
             if(sum==targetsum){
@@ -17,6 +18,10 @@ public class Subsetgeneration{
             if(index>=arr.length){
                 return false;
             }
+            //pruning can be done [eery number is possitive];
+             if(sum>targetsum){
+                return false;
+             }
             if(subset(arr,index+1,sum+arr[index],targetsum)){
                 return true;
             }
