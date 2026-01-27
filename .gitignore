@@ -1,1 +1,5 @@
-*.class
+# Ignore compiled Java class files
+bin/
+
+# Ignore VS Code settings folder
+.vscode/
