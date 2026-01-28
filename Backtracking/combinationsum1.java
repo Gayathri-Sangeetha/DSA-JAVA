@@ -22,7 +22,6 @@ Example 3:
 
 Input: candidates = [2], target = 1
 Output: []
- 
 
 Constraints:
 
